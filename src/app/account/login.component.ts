@@ -6,7 +6,10 @@ import { first } from 'rxjs/operators';
 import { AccountService, AlertService } from '@app/_services';
 
 @Component({ templateUrl: 'login.component.html' })
+
 export class LoginComponent implements OnInit {
+l
+
     form: FormGroup;
     loading = false;
     submitted = false;
@@ -21,8 +24,8 @@ export class LoginComponent implements OnInit {
 
     ngOnInit() {
         this.form = this.formBuilder.group({
-            email: ['', [Validators.required, Validators.email]],
-            password: ['', Validators.required]
+            email: ['', [Validators.required, Validators.email,Validators.min(6)]],
+            password: ['', Validators.required,Validators.min(6)]
         });
     }
 
