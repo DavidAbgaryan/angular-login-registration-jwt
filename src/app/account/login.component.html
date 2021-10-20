@@ -8,7 +8,7 @@
             <div *ngIf="submitted && f.email.errors " class="invalid-feedback">
                 <div *ngIf="f.email.errors.required">Email is required</div>
                 <div *ngIf="f.email.errors.email">Email is invalid</div>
-                <div *ngIf="f.email.errors.minlength">Email should be at least 6 symbol</div>
+                <div *ngIf="f.email.errors.minlength">Email should be at least 6 symbols</div>
             </div>
         </div>
         <div class="form-group">
@@ -17,7 +17,7 @@
                minlength="6" />
             <div *ngIf="submitted && f.password.errors " class="invalid-feedback">
                 <div *ngIf="f.password.errors.required">Password is required</div>
-                <div *ngIf="f.password.errors.minlength">Password should be at least 6 symbls</div>
+                <div *ngIf="f.password.errors.minlength">Password should be at least 6 symbols</div>
             </div>
         </div>
         <div class="form-row">
